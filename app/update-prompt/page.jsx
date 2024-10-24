@@ -75,5 +75,4 @@ const EditPrompt = () => {
     </Suspense>
   );
 };
-expo
 export default EditPrompt;
