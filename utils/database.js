@@ -9,8 +9,8 @@ export const connection2DB = async () => {
     try {
         const conn = await mongoose.connect(process.env.MONGODB_URI, {
             dbName: 'share_prompt',
-            // useNewUrlParser: true,
-            // useUnifiedTopology: true,
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
             serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
             socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
         });
