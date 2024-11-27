@@ -11,8 +11,8 @@ export const connection2DB = async () => {
             dbName: 'share_prompt',
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
-            socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
+            // serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
+            // socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
         });
         isConnected = true;
         console.log(`mongoDB connected:${conn.connection.host}`);
